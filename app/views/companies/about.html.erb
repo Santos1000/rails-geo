@@ -1,0 +1,8 @@
+<h1>Our first view 🚀🚀</h1>
+<ol>
+  <% @members.each do |member| %>
+    <li><%= member.capitalize %></li>
+  <% end %>
+</ol>
+
+<%= link_to "See all stoks", show_path %>
