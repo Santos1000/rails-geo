@@ -31,6 +31,8 @@ gem 'simple_form'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'pry-rails'
+  gem 'dotenv-rails'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
@@ -49,8 +51,15 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 #API to select companies
-
+gem 'json'
 gem 'open-uri'
 gem 'nokogiri'
 
 gem "httparty"  # get and post direct in url
+
+# RapidAPI
+gem 'net-http'
+gem 'openssl'
+gem 'bcrypt'
+gem 'unirest'
+gem 'excon'
