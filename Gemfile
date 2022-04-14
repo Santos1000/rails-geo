@@ -55,11 +55,8 @@ gem 'json'
 gem 'open-uri'
 gem 'nokogiri'
 
-gem "httparty"  # get and post direct in url
 
 # RapidAPI
 gem 'net-http'
-gem 'openssl'
-gem 'bcrypt'
-gem 'unirest'
-gem 'excon'
+
+gem 'httparty', '~> 0.20.0'   # get and post direct in url
