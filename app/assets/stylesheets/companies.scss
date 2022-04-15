@@ -25,22 +25,6 @@ $orange: #ec992c;
   &::before {
     background: rgba(10, 72, 112, 0.6);
   }
-
-  .book-container {
-    .content {
-      opacity: 1;
-
-      transform: translateY(0px);
-    }
-  }
-
-  .informations-container {
-    transform: translateY(0px);
-
-    .more-information {
-      opacity: 1;
-    }
-  }
 }
 
 * {
@@ -103,14 +87,16 @@ ul {
 
       .content {
         position: relative;
-        opacity: 0;
+
         display: flex;
         align-items: center;
         justify-content: center;
         height: 100%;
         width: 100%;
+        opacity: 1;
 
-        transform: translateY(-200px);
+        transform: translateY(0px);
+
 
         transition: .3s;
 
@@ -142,12 +128,10 @@ ul {
 
     .informations-container {
       flex: 1 0 auto;
-
+      transform: translateY(0px);
       padding: 20px;
 
       background: $grey2;
-
-      transform: translateY(206px);
 
       transition: .3s;
 
@@ -176,21 +160,9 @@ ul {
         }
       }
 
-      .price {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        margin-top: 8px;
-
-        .icon {
-          margin-right: 10px;
-        }
-      }
-
       .more-information {
-        opacity: 0;
 
+        opacity: 1;
         transition: .3s;
 
         .info-and-date-container {
@@ -241,26 +213,4 @@ ul {
       @include cardsOpen();
     }
   }
-}
-
-.credits {
-  display: table;
-  background: $blue;
-  color: white;
-  line-height: 25px;
-
-  margin: 10px auto;
-  padding: 20px;
-
-  @include radius(10px);
-
-  text-align: center;
-
-  a {
-    color: $blue2;
-  }
-}
-
-h1 {
-  margin: 10px 20px;
 }
