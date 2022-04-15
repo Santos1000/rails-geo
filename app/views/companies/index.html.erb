@@ -9,10 +9,8 @@
             required: true,
             placeholder: 'Search company',
             class: 'form-control' %>
-
             <%= submit_tag "Search", class: "btn btn-success mt-2 mb-5" %>
           <% end %>
-
           <% if flash[:alert] %>
             <div class="alert alert-warning"><%= flash[:alert] %></div>
           <% end %>
