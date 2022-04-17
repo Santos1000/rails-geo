@@ -55,7 +55,6 @@ gem 'json'
 gem 'open-uri'
 gem 'nokogiri'
 
-
 # RapidAPI
 gem 'net-http'
 
