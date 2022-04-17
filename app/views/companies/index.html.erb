@@ -22,9 +22,9 @@
 
   <ul>
 
-    <% @quotes.each do |company| %>
-        <% (0..company.length).each do |token|%>
 
+    <% @quotes.each do |company| %>
+      <%token = rand(1..5000)%>
         <% @name_company = company["symbol"] %>
         <% @longname_company = company["longname"] %>
         <% @exchdisp_company = company["exchDisp"] %>
@@ -33,13 +33,11 @@
           <li class="booking-card" style="background-image: url(https://images.unsplash.com/photo-1578944032637-f09897c5233d?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ)">
               <div class="book-container">
                 <div class="content">
-                  <a class="btn" id ="<%=token %>"  href="/show">ABOUT</a>
+                    <a class="btn select" id ="<%=token%>"  href="/show"><%= @name_company %></a>
+
                 </div>
               </div>
               <div class="informations-container">
-
-                <h2 class="title"><%= @name_company %> </h2>
-
                 <p class="sub-title"><%= @longname_company%></p>
                 <div class="more-information">
                   <div class="info-and-date-container">
@@ -60,7 +58,6 @@
               </div>
           </li>
         </div>
-      <%end%>
     <%end%>
   </ul>
 </div>
