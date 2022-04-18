@@ -1,0 +1,8 @@
+const list = document.querySelectorAll(".btn select");
+
+const element = list.getElementById("");
+
+
+
+
+export {  }

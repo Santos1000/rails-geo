@@ -11,8 +11,8 @@
           <table class="table table-borderless datatable">
             <thead>
               <tr>
-                <th scope="col">#</th>
-                <th scope="col">Coin</th>
+                <th scope="col">ticker</th>
+                <th scope="col">Company name</th>
                 <th scope="col">Current Price</th>
                 <th scope="col">All Time High</th>
                 <th scope="col">Market Cap</th>
@@ -136,88 +136,11 @@
                   <div class="d-flex justify-content-end mb-2 mt-1">
                     <div class="dropdown mt-3">
                       <a id="trade-btn" class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                        Trade Now
-                      </a>
-
-                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <%# <li><a class="dropdown-item" href="#">Binance</a></li>
-                        <li><a class="dropdown-item" href="#">FTX</a></li>
-                        <li><a class="dropdown-item" href="#">Coin Base</a></li> %>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-        <!-- End Market Info Card -->
-
-      </div>
-
-      <!-- TV Chart -->
-      <div class="card">
-
-        <div class="card-body">
-
-          <div class="tradingview-widget-container" id="tvchart"></div>
-
-        </div>
-
-      </div>
-      <!-- End TV Chart -->
-
-    </div>
-
-    <!-- End Left side columns -->
-
-    <!-- Right side columns -->
-    <div class="col-4">
 
       <!-- TradingView Widget BEGIN -->
       <div class="card">
 
         <div class="card-body">
-
-          <div class="tradingview-widget-container" style="margin: 0 auto">
-            <div class="tradingview-widget-container__widget"></div>
-            <%# <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
-            {
-            "interval": "1D",
-            "width": "90%",
-            "isTransparent": true,
-            "height": "450",
-            "symbol": "BINANCE:<%= @coin['symbol'] USD",
-            <%# "showIntervalTabs": true, %>
-            <%# "locale": "en", %>
-            <%# "colorTheme": "light" %>
-            <%# } %>
-            <%# </script> %>
-          </div>
-
-        </div>
-
-      </div>
-      <!-- TradingView Widget END -->
-
-      <!-- About Card -->
-      <div class="card">
-
-        <div class="card-body">
-
-          <h5 class="card-title">About</h5>
-          <%# <p>
-            <%= @coin['description']['en'][0..700] %>
-          <%# </p>
-          <a href="">more</a> %>
-
-        </div>
-
-      </div>
-      <!-- End About Card -->
-
 
     </div>
     <!-- End Right side columns -->
