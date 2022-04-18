@@ -17,15 +17,13 @@ API is a free library for programmers who use Visual Studio.- https://rapidapi.c
   * rails s
   * bindin-pry
   * byebug
-
-
 inspect the : 
 
-gem file
-app/controllers
-app/views/
-config/routes
-app/assets/slylesheets/companies
+* gem file
+* app/controllers
+* app/views/
+* config/routes
+* app/assets/slylesheets/companies
 
 * Deployment instructions
 Deploy failed because of sqlite3 that is not enabled by heroku, need switch to postgresql.
